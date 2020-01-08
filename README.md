@@ -25,7 +25,7 @@ I implemented a noise calculation for each pixel.
 
 
 
-Here are some cool images that show my results:
+*Here are some cool images that show my results*:
 
 Cornell:
 
