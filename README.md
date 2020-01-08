@@ -3,7 +3,7 @@ Created Ray Tracer using Java OpenGL that implements Perlin Noise, Motion Blur, 
 
 Within a4data, there are the XML files that contain descriptions of 3D scenes. Each file is organized as a sequence of named materials, lights, cameras, nodes, and geometry. The main scene is defined in the top-level node. The scene nodes each have an associated transformation. The node definition can contain transformation attributes: translation, rotation, and scale. Finally, each node can also contain a list of child nodes, allowing a hierarchy of transformations and geometry to be built. Parser.java, the code that parses the XML, was mostly written by my professor Paul Kry, although I did make many adjustments to it as I went along.
 
-What I worked on directly:
+***What I worked on directly***:
 
 **Scene.java**
 
@@ -21,6 +21,8 @@ Each scene node has a transform matrix to allow you to re-position and re-orient
 
 **PerlinNoise.java**
 I implement a noise calculation for each pixel. 
+
+
 
 Here are some cool images that show my results:
 
