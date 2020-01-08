@@ -5,23 +5,21 @@ Within a4data, there are the XML files that contain descriptions of 3D scenes. E
 
 What I worked on directly:
 
-Scene.java
+**Scene.java**
 
 The scene class which contains information about all the intersectable objects, the lights, and extra scene information such as the ambient light. This is where the rendering nested for loop lives .
 
 Also: the code for generating a ray to intersect with the scene, lighting and shading, soft shadows, motion blur, supersampling, mirror reflection, fresnel reflection and refraction all lives here. 
 
-Sphere.java
-Plane.java
-Box.java
-Mesh.java
+**Sphere.java / Plane.java / Box.java / Mesh.java**
 
 These are all subclasses of Intersectable. Each have extra information relevant to the object type, such as radius and center for Sphere. I implemented the intersection code for each!
 
-SceneNode.java
+**SceneNode.java**
+
 Each scene node has a transform matrix to allow you to re-position and re-orientate objects within your scene. The transformations defined in the scene nodes should transform the rays before intersecting the geometry and child nodes, then transform the normal of the intersection result returned to the caller. The code in the SceneNode class implements the Intersectable interface and performs the intersection test on all of its child nodes.
 
-PerlinNoise.java
+**PerlinNoise.java**
 I implement a noise calculation for each pixel. 
 
 Here are some cool images that show my results:
