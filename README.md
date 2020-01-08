@@ -29,4 +29,4 @@ Here are some cool images that show my results:
 
 ! [Test Image] (https://github.com/natchanishungry/Ray-Tracer/blob/master/PHOTOS/Cornell.png)
 
-! [Test Image] (https://github.com/natchanishungry/Ray-Tracer/blob/master/PHOTOS/Cornell.png)
+! [Test Image] (PHOTOS/Cornell.png)
