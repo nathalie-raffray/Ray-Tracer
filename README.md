@@ -1,4 +1,5 @@
 # Ray-Tracer
+Created Ray Tracer using Java OpenGL that implements Perlin Noise, Motion Blur, Mirror Reflection, Soft Shadows, and more.  
 
 NATHALIE RAFFRAY
 260682940
