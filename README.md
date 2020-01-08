@@ -17,11 +17,11 @@ These are all subclasses of Intersectable. Each have extra information relevant 
 
 **SceneNode.java**
 
-Each scene node has a transform matrix to allow you to re-position and re-orientate objects within your scene. The transformations defined in the scene nodes should transform the rays before intersecting the geometry and child nodes, then transform the normal of the intersection result returned to the caller. The code in the SceneNode class implements the Intersectable interface and performs the intersection test on all of its child nodes.
+Each scene node has a transform matrix to allow you to re-position and re-orientate objects within your scene. The transformations defined in the scene nodes transform the rays before intersecting the geometry and child nodes, then transform the normal of the intersection result returned to the caller. The code in the SceneNode class implements the Intersectable interface and performs the intersection test on all of its child nodes.
 
 **PerlinNoise.java**
 
-I implemented a noise calculation for each pixel. 
+I implemented a noise calculation for the closest point of intersection with a box or sphere. 
 
 
 
