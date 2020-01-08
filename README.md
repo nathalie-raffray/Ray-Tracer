@@ -7,7 +7,7 @@ Within a4data, there are the XML files that contain descriptions of 3D scenes. E
 
 **Scene.java**
 
-The scene class which contains information about all the intersectable objects, the lights, and extra scene information such as the ambient light. This is where the rendering nested for loop lives .
+The scene class which contains information about all the intersectable objects, the lights, and extra scene information such as the ambient light. This is where the rendering nested for loop lives.
 
 Also: the code for generating a ray to intersect with the scene, lighting and shading, soft shadows, motion blur, supersampling, mirror reflection, fresnel reflection and refraction all lives here. 
 
