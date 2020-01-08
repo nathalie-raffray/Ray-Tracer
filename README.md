@@ -1,7 +1,7 @@
 # Ray-Tracer
 Created Ray Tracer using Java OpenGL that implements Perlin Noise, Motion Blur, Mirror Reflection, Soft Shadows, and more.  
 
-Within a4data, there are the XML files that contain descriptions of 3D scenes. Each file is organized as a sequence of named materials, lights, cameras, nodes, and geometry. The main scene is defined in the top-level node. The scene nodes each have an associated transformation. The node definition can contain transformation attributes: translation, rotation, and scale (and others if you choose to add them).Finally, each node can also contain a list of child nodes, allowing a hierarchy of transformations and geometry to be built. Parser.java, the code that parses the XML, was mostly written by my professor Paul Kry, although I did make many adjustments to it as I went along.
+Within a4data, there are the XML files that contain descriptions of 3D scenes. Each file is organized as a sequence of named materials, lights, cameras, nodes, and geometry. The main scene is defined in the top-level node. The scene nodes each have an associated transformation. The node definition can contain transformation attributes: translation, rotation, and scale. Finally, each node can also contain a list of child nodes, allowing a hierarchy of transformations and geometry to be built. Parser.java, the code that parses the XML, was mostly written by my professor Paul Kry, although I did make many adjustments to it as I went along.
 
 What I worked on directly:
 
