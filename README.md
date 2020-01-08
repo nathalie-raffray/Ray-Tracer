@@ -26,7 +26,28 @@ I implement a noise calculation for each pixel.
 
 Here are some cool images that show my results:
 
+Cornell:
 
-![Test Image] (https://github.com/natchanishungry/Ray-Tracer/blob/master/PHOTOS/Cornell.png)
+![Test Image](https://github.com/natchanishungry/Ray-Tracer/blob/master/PHOTOS/Cornell.png)
 
-![Test Image] (PHOTOS/Cornell.png)
+Box Stacks: 
+
+![Test Image](https://github.com/natchanishungry/Ray-Tracer/blob/master/PHOTOS/BoxStacks.png)
+
+Torus Mesh:
+
+![Test Image](https://github.com/natchanishungry/Ray-Tracer/blob/master/PHOTOS/TorusMesh.png)
+
+Two Spheres on a Plane (with some supersampling):
+
+![Test Image](https://github.com/natchanishungry/Ray-Tracer/blob/master/PHOTOS/TwoSpheresPlane.png)
+
+Weird Scene with Perlin, Mirror, Refraction, Motion Blur, Soft Shadow... :
+
+![Test Image](https://github.com/natchanishungry/Ray-Tracer/blob/master/PHOTOS/FinalScene.png)
+
+An Experiment with Perlin Noise:
+
+![Test Image](https://github.com/natchanishungry/Ray-Tracer/blob/master/PHOTOS/perlinNoise.png)
+
+
