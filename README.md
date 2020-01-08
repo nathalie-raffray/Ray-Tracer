@@ -1,30 +1,27 @@
 # Ray-Tracer
 Created Ray Tracer using Java OpenGL that implements Perlin Noise, Motion Blur, Mirror Reflection, Soft Shadows, and more.  
 
-NATHALIE RAFFRAY
-260682940
+Within a4data, there are the XML files that contain descriptions of 3D scenes. Each file is organized as a sequence of named materials, lights, cameras, nodes, and geometry. The main scene is defined in the top-level node. The scene nodes each have an associated transformation. The node definition can contain transformation attributes: translation, rotation, and scale (and others if you choose to add them).Finally, each node can also contain a list of child nodes, allowing a hierarchy of transformations and geometry to be built. Parser.java, the code that parses the XML, was mostly written by my professor Paul Kry, although I did make many adjustments to it as I went along.
 
-For the remaining marks, I implemented:
+What I worked on directly:
 
-Mirror reflection (0.5 mark)
+Scene.java
 
-Fresnel Reflection (0.5 mark)
+The scene class which contains information about all the intersectable objects, the lights, and extra scene information such as the ambient light. This is where the rendering nested for loop lives .
 
-Refraction (0.5 mark)
+Also: the code for generating a ray to intersect with the scene, lighting and shading, soft shadows, motion blur, supersampling, mirror reflection, fresnel reflection and refraction all lives here. 
 
-Motion blur (0.5-1 mark)
+Sphere.java
+Plane.java
+Box.java
+Mesh.java
 
-Soft Shadows (1 mark)
+These are all subclasses of Intersectable. Each have extra information relevant to the object type, such as radius and center for Sphere. I implemented the intersection code for each!
 
-Perlin Noise (1 mark)
+SceneNode.java
+Each scene node has a transform matrix to allow you to re-position and re-orientate objects within your scene. The transformations defined in the scene nodes should transform the rays before intersecting the geometry and child nodes, then transform the normal of the intersection result returned to the caller. The code in the SceneNode class implements the Intersectable interface and performs the intersection test on all of its child nodes.
 
+PerlinNoise.java
+I implement a noise calculation for each pixel. 
 
-Final Scene:
-
-In my final scene I have implemented motion blur of spheres, giving them a "velocity". 
-My perlin noise is the big eye thing at the top. To implement it I only accepted intersecting rays with noise above a certain threshold. 
-My sphere is a perfect reflector, and the boxes beside use fresnel and refraction. 
-As you can see as well, soft shadows are implemented for all shapes (including the perlin noise, which has a leopard print kind of shadow).
-My perlinnoise.xml also has an interesting shape computed with perlin noise. 
-
-Feel free to look in the file named "PHOTOS" for the pngs.
+Here are some cool images that show my results:
