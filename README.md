@@ -26,4 +26,4 @@ I implement a noise calculation for each pixel.
 
 Here are some cool images that show my results:
 
-![TestImage] (PHOTOS/Cornell.png)
+![Test Image] (PHOTOS/Cornell.png)
