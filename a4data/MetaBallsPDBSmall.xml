@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<scene ambient="0.2 0.2 0.2">
+  <!-- define camera,material,lights here -->
+  <light name="myLight1" color="0.6 0.3 0.3" from="10 7 10 " power="0.6" type="point" />
+  <light name="myLight2" color="0.8 0.8 0.8" from="0 10 0 " power="0.9" type="point" />
+  <material name="N" diffuse="1 0 0" specular="0.5 0.5 0.5" hardness="50" />
+  <material name="C" diffuse="0 1 0" specular="0.5 0.5 0.5" hardness="50" />
+  <material name="O" diffuse="0 0 1" specular="0.5 0.5 0.5" hardness="50" />
+  <material name="black" diffuse="0.9 0.9 0.9" specular="0 0 0" hardness="0" />
+  <material name="white" diffuse="1 1 1" specular="0 0 0" hardness="0" />
+  
+  <!-- render configuration -->
+  <render bgcolor="0 0 0" output="MetaBallsPDBSmall.png" samples="1" >
+    <camera name="myCamera" from="0 8 18" to="0 0 0" up="0 1 0" fovy="35" width="640" height="480" />
+  </render> 
+  
+  <!-- scene objects -->
+
+<node name="R" rotation="110 200 0" > 
+  <node name="T"  translation="-50.1 -24.57 -10.78"   >
+<metaballs>
+
+  <sphere center="49.668  24.248  10.436" radius="1.2"> <material ref="N"/> </sphere>
+  <sphere center="50.197  25.578  10.784" radius="1.2"> <material ref="C"/> </sphere>
+  <sphere center="49.668  24.248  10.436" radius="1.2"> <material ref="N"/> </sphere>
+  <sphere center="49.169  26.701  10.917" radius="1.2"> <material ref="C"/> </sphere>
+  <sphere center="48.241  26.524  11.749" radius="1.2"> <material ref="O"/> </sphere>
+  <sphere center="51.312  26.048   9.843" radius="1.2"> <material ref="C"/> </sphere>
+  <sphere center="50.958  26.068   8.340" radius="1.2"> <material ref="C"/> </sphere>
+  <sphere center="49.636  26.144   7.860" radius="1.2"> <material ref="N"/> </sphere>
+  <sphere center="51.797  26.043   7.286" radius="1.2"> <material ref="C"/> </sphere>
+  <sphere center="49.691  26.152   6.454" radius="1.2"> <material ref="C"/> </sphere>
+  <sphere center="51.046  26.090   6.098" radius="1.2"> <material ref="N"/> </sphere>
+</metaballs>
+  
+	    
+  </node>
+  </node>
+  <node name="plane" translation="0 -10 0">
+  <plane coeffs="0 1 0 -200" >
+		<material ref="black" />
+		<material2 ref="white" />
+    </plane>
+	</node>
+	  
+</scene>
